@@ -1,0 +1,57 @@
+<section class="hero" id="home">
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide slide-1"
+            style="background-image: url('./assets/images/1.png');
+                background-size: cover; 
+    background-position: center; 
+    height: 80vh;;">
+            <!-- Slide 1 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Slide 1 Subtitle</p>
+              <h2 class="h1 hero-title">Slide 1 Title</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-slide slide-2"
+            style="background-image: url('./assets/images/2.png');
+                background-size: cover; 
+    background-position: center;
+    height: 80vh;">
+            <!-- Slide 2 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Slide 2 Subtitle</p>
+              <h2 class="h1 hero-title">Slide 2 Title</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-slide slide-3"
+            style="background-image: url('./assets/images/3.png');
+               background-size: cover;
+    background-position: center; 
+    height: 80vh;">
+            <!-- Slide 3 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Slide 3 Subtitle</p>
+              <h2 class="h1 hero-title">Slide 3 Title</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-slide slide-3"
+            style="background-image: url('./assets/images/4.png');">
+            <!-- Slide 3 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Slide 3 Subtitle</p>
+              <h2 class="h1 hero-title">Slide 3 Title</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel dots -->
+        <div class="carousel-dots">
+          <span class="dot" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,84 @@
+.browse-stores {
+    /* justify-content: center; */
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 0 33%; */
+}
+
+.browse-stores h1 {
+    text-align: center;
+    font-size: var(--fs-2);
+    font-weight: var(--fw-600);
+    color: var(--black);
+    padding: 20px;
+}
+
+.browse-container {
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+
+/* .single-partner{
+    border-radius: 50%;
+  }
+   */
+
+/* .single-partner img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.single-partner:hover img {
+    transform: scale(1.1);
+} */
+
+.single-partner {
+    position: relative; /* Add position relative to contain the image within this element */
+    overflow: hidden; /* Hide any content that overflows the container */
+    border-radius: 5px;
+}
+
+.single-partner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Add initial scale value */
+    transform: scale(1) translateY(0);
+    /* Add transition for the transform property */
+    transition: transform 0.3s ease;
+}
+
+.single-partner:hover img {
+    /* Apply the lift-up and zoom-in effect on hover */
+    transform: scale(1.1) translateY(-10px);
+    /* Add any other desired transition properties for other effects */
+}
+
+
+
+
+img {
+    vertical-align: middle;
+    overflow-clip-margin: border-box;
+    overflow: clip;
+}
+

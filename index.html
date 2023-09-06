@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rewind Merch</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="" type="image/svg+xml" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/slider.css" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-contacts ">
+        <!-- <a href="#"><span class="phone-icon"><i class="fa-solid fa-headset"></i> +91 1234567890</span></a> -->
+        <a href="#"><span class="message-icon"><i class="fa-brands fa-whatsapp "></i> Chat With Us</span></a>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/rewind_transparent.png" alt="Rewind logo" />
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- slider section -->
+    <section class="hero" id="home">
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide slide-1" style="background-image: url('./assets/images/1.png');">
+            <!-- Slide 1 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Where Fashion Dreams Come True</p>
+              <h2 class="h1 hero-title">Shop Smart, Live Stylish: Your Online Fashion Destination</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+
+          <div class="carousel-slide slide-2" style="background-image: url('./assets/images/2.png');">
+            <!-- Slide 2 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Your Style, Your Store</p>
+              <h2 class="h1 hero-title">Discover, Shop, Repeat: Unveiling Trendy Finds Every Day</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+
+          <div class="carousel-slide slide-3" style="background-image: url('./assets/images/3.png');">
+            <!-- Slide 3 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Unravel the Art of Shopping with Us</p>
+              <h2 class="h1 hero-title">Style Meets Convenience: Shop the Latest Trends Online</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-slide slide-3" style="background-image: url('./assets/images/4.png');">
+            <!-- Slide 3 content -->
+            <div class="carousel-content">
+              <p class="hero-subtitle">Shopping Reimagined: Seamless, Secure, Stylish</p>
+              <h2 class="h1 hero-title">Unleash the Shopper in You: Dive into Our Vast Collection</h2>
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel dots -->
+        <div class="carousel-dots">
+          <span class="dot" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+
+
+    <!-- 
+        - #SERVICE
+      -->
+
+    <section class="service">
+      <div class="container">
+
+        <ul class="service-list">
+
+          <li class="service-item">
+            <div class="service-item-icon">
+              <img src="./assets/images/truck.svg" alt="Service icon">
+              <!-- <i class="fa-solid fa-truck-fast"></i> -->
+            </div>
+
+            <div class="service-content">
+              <p class="service-item-title">Rush Delhivery</p>
+
+              <p class="service-item-text">Pan India, in 4 working days</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-item-icon">
+              <img src="./assets/images/shirt.svg" alt="Service icon">
+              <!-- <i class="fa-solid fa-shirt"></i> -->
+            </div>
+
+            <div class="service-content">
+              <p class="service-item-title">Single Piece Orders</p>
+
+              <p class="service-item-text">No minimum order amount</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-item-icon">
+              <img src="./assets/images/360_degree.svg" alt="Service icon">
+            </div>
+
+            <div class="service-content">
+              <p class="service-item-title">Customization Tool</p>
+
+              <p class="service-item-text">with 360 degree preview</p>
+              </p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-item-icon">
+              <img src="./assets/images/zero_plastic.svg" alt="Service icon">
+            </div>
+
+            <div class="service-content">
+              <p class="service-item-title">Zero Plastic</p>
+
+              <p class="service-item-text">Eco friendly packaging</p>
+            </div>
+          </li>
+
+        </ul>
+        <style>
+          .service .service-item i {
+            font-size: 30px;
+            color: black;
+          }
+        </style>
+      </div>
+    </section>
+
+    <section class="popular-category">
+      <h1>Product <span class="span_span ">Categories</span></h1>
+      <div class="categories-container">
+        <!-- Top 4 boxes in 2x2 grid -->
+        <div class="category-row-1">
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/1.jpg" alt="Category 1">
+            <div class="category-heading">Sweatshirts</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/2.jpg" alt="Category 1">
+            <div class="category-heading">Joggers</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/3.jpg" alt="Category 2">
+            <div class="category-heading">Hoodies</div>
+          </div>
+        </div>
+
+        <div class="category-row-1">
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/4.jpg" alt="Category 1">
+            <div class="category-heading">Collared T-Shirts</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/5.jpg" alt="Category 2">
+            <div class="category-heading">Active Wear Jersey</div>
+          </div>
+        </div>
+
+        <!-- Bottom 2 boxes in 2x1 grid -->
+        <div class="category-row-1">
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/6.jpg" alt="Category 1">
+            <div class="category-heading">Round Neck Oversized T-Shirts</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/7.jpg" alt="Category 1">
+            <div class="category-heading">Promotional T-Shirts</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/8.jpg" alt="Category 1">
+            <div class="category-heading">Round Neck Crop Tops</div>
+          </div>
+        </div>
+
+
+        <div class="category-row-1">
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/9.jpg" alt="Category 1">
+            <div class="category-heading">Hoodies with Zip</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/10.jpg" alt="Category 2">
+            <div class="category-heading">Varsity Jackets</div>
+          </div>
+        </div>
+
+        <div class="category-row-1">
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/11.jpg" alt="Category 1">
+            <div class="category-heading">Shorts</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/12.jpg" alt="Category 1">
+            <div class="category-heading">Caps</div>
+          </div>
+          <div class="category-box">
+            <img class="category-image" src="./assets/tempelate/13.jpg" alt="Category 2">
+            <div class="category-heading">Mugs</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="custom-section">
+      <div class="custom-content">
+        <div class="custom-image">
+          <img src="./assets/images/WhatsApp Image 2023-09-06 at 3.48.18 PM.jpeg" alt="Custom Apparel"
+            class="custom-img">
+        </div>
+        <div class="custom-text">
+          <h2 class="custom-heading">Custom T-Shirts/Hoodies/Varsity Jackets</h2>
+          <ul class="custom-points">
+            <li><span></span>No Minimum Order Quantity</li>
+            <li><span></span>India’s most trusted customized merchandise brand</li>
+            <li><span></span>High-Quality T-shirts</li>
+            <li><span></span>100% Cotton and Soft Fabric</li>
+            <li><span></span>Styles like Round Neck T-shirts, Polo T-shirts, Hoodies, Jerseys, and Varsity Jackets</li>
+            <li><span></span>20+ Color Options</li>
+            <li><span></span>Multiple Printing Solutions</li>
+            <li><span></span>Print on Front, Back, Right Sleeve, and Left Sleeve</li>
+            <li><span></span>We Ensure Perfection</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="Get_your_T-Shirts_contact">
+      <h2 class="Get_your_T-Shirts_contact-heading">Get your T-Shirts/Hoodies/Varsity Jackets customized NOW!</h2>
+      <div class="Get_your_T-Shirts_contact-whatsapp">
+        <button class="Get_your_T-Shirts_contact-button">
+          <i class="fab fa-whatsapp"></i> Contact us on WhatsApp
+        </button>
+      </div>
+    </section>
+
+
+    <section class="stats-section">
+      <div class="data-block">
+        <div class="icon-container">
+          <i class="icon fas fa-shopping-cart"></i> <!-- Replace with an appropriate icon class -->
+        </div>
+        <div class="data-number">100,000+</div>
+        <div class="data-label">Products Sold</div>
+      </div>
+
+      <div class="data-block">
+        <div class="icon-container">
+          <i class="icon fas fa-users"></i> <!-- Replace with an appropriate icon class -->
+        </div>
+        <div class="data-number">7,500+</div>
+        <div class="data-label">Satisfied Clients</div>
+      </div>
+
+      <div class="data-block">
+        <div class="icon-container">
+          <i class="icon fas fa-truck"></i> <!-- Replace with an appropriate icon class -->
+        </div>
+        <div class="data-number">1,800+</div>
+        <div class="data-label">Fulfilled Orders</div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="partner-section">
+      <h1 class="partner-title">Our <span class="span_span">Clients</span></h1>
+      <h2 class="partner-subtitle">Check out our trusted partners</h2>
+      <div class="partner-row">
+        <!-- Partner 1 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-1.png" alt="Partner 1">
+        </div>
+        <!-- Partner 2 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-2.png" alt="Partner 2">
+        </div>
+        <!-- Partner 3 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-3.png" alt="Partner 3">
+        </div>
+        <!-- Continue adding partner items for partners 4 to 33 -->
+        <!-- Partner 4 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-4.png" alt="Partner 4">
+        </div>
+        <!-- Partner 5 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-5.png" alt="Partner 5">
+        </div>
+        <!-- Partner 6 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-6.png" alt="Partner 6">
+        </div>
+        <!-- Partner 7 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-7.png" alt="Partner 7">
+        </div>
+        <!-- Partner 8 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-8.png" alt="Partner 8">
+        </div>
+        <!-- Partner 9 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-9.png" alt="Partner 9">
+        </div>
+        <!-- Partner 10 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-10.png" alt="Partner 10">
+        </div>
+        <!-- Partner 11 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-11.png" alt="Partner 11">
+        </div>
+        <!-- Partner 12 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-12.png" alt="Partner 12">
+        </div>
+        <!-- Partner 13 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-13.png" alt="Partner 13">
+        </div>
+        <!-- Partner 14 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-14.png" alt="Partner 14">
+        </div>
+        <!-- Partner 15 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-15.png" alt="Partner 15">
+        </div>
+        <!-- Partner 16 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-16.png" alt="Partner 16">
+        </div>
+        <!-- Partner 17 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-17.png" alt="Partner 17">
+        </div>
+        <!-- Partner 18 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-18.png" alt="Partner 18">
+        </div>
+        <!-- Partner 19 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-19.png" alt="Partner 19">
+        </div>
+        <!-- Partner 20 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-20.png" alt="Partner 20">
+        </div>
+        <!-- Partner 21 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-21.png" alt="Partner 21">
+        </div>
+        <!-- Partner 22 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-22.png" alt="Partner 22">
+        </div>
+        <!-- Partner 23 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-23.png" alt="Partner 23">
+        </div>
+        <!-- Partner 24 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-24.png" alt="Partner 24">
+        </div>
+        <!-- Partner 25 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-25.png" alt="Partner 25">
+        </div>
+        <!-- Partner 26 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-26.png" alt="Partner 26">
+        </div>
+        <!-- Partner 27 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-27.png" alt="Partner 27">
+        </div>
+        <!-- Partner 28 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-28.png" alt="Partner 28">
+        </div>
+        <!-- Partner 29 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-29.png" alt="Partner 29">
+        </div>
+        <!-- Partner 30 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-30.png" alt="Partner 30">
+        </div>
+        <!-- Partner 31 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-31.png" alt="Partner 31">
+        </div>
+        <!-- Partner 32 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-32.png" alt="Partner 32">
+        </div>
+        <!-- Partner 33 -->
+        <div class="partner-item">
+          <img class="partner-image" src="./assets/images/client-33.png" alt="Partner 33">
+        </div>
+
+      </div>
+      
+    </section>
+
+
+  </main>
+
+  <footer>
+
+    <div class="ftr-cont">
+
+      <div class="ftr-contup">
+        <h1>
+          Contact Us
+        </h1>
+      </div>
+
+      <div class="ftr-cont-dwn">
+
+        <div class="ftr-ele">
+          <i class="fa fa-mobile-screen fa-2x"></i>
+          <span>+91 9997 999 999</span>
+        </div>
+
+        <div class="ftr-ele">
+          <i class="fa-brands fa-whatsapp fa-2x"></i>
+          <span>+91 9997 999 999</span>
+        </div>
+
+        <div class="ftr-ele">
+          <i class="fa-regular fa-envelope fa-2x"></i>
+          <span>+91 9997 999 999</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <!-- <i class="fab fa-slack"></i> -->
+          <span class="logo_name"><img src="./assets/images/rewind_transparent.png" width="150" alt="logo"></span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Customer Products</li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+        </ul>
+        <!-- <ul class="box">
+          <li class="link_name">Heading 2</li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+        </ul> -->
+        <ul class="box">
+          <li class="link_name"> About Us</li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Work With Us</li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+          <li><a href="#">lorem123</a></li>
+        </ul>
+
+        <ul class="box input-box">
+          <li class="link_name">Location</li>
+          <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+            <script>(function () {
+                var setting = { "query": "REVA University, Rukmini Knowledge Park, State Highway 104, Srinivasa Nagar, Bengaluru, Karnataka, India", "width": 200, "height": 200, "satellite": false, "zoom": 12, "placeId": "ChIJN3oYNhcZrjsRm0z7p2sJkjA", "cid": "0x3092096ba7fb4c9b", "coords": [13.1215682, 77.6207127], "lang": "en", "queryString": "REVA University, Rukmini Knowledge Park, State Highway 104, Srinivasa Nagar, Bengaluru, Karnataka, India", "centerCoord": [13.1215682, 77.6207127], "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "973752" };
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=973752';
+                s.async = true;
+                s.onload = function (e) {
+                  window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+              })();</script><a href="https://1map.com/map-embed">1 Map</a>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright &#169; 2023 | <a href="#">RewindMerch.</a>All rights reserved</span>
+        <span class="copyright_text">Powered by <a href="#">MindsAhead Digital</a></span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
